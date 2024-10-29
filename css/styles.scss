@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+// font-family: 'Spartan', sans-serif; //700
+//Font size (numbers): 32px
+
+$mainBackground: hsl(222, 26%, 31%);
+$keypadBackground: hsl(223, 31%, 20%);
+$screenBackground: hsl(224, 36%, 15%);
+$keyToggleRed: hsl(6, 63%, 50%);
+$darkRed: hsl(6, 70%, 34%);
+$keyBackground: hsl(30, 25%, 89%);
+$keyShadow: hsl(28, 16%, 65%);
+$darkGrayBlue: hsl(221, 14%, 31%);
+$white: hsl(0, 0, 100%);
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Spartan', sans-serif;
+	font-weight: 700;
+	font-size: 32px;
+	background-color: $mainBackground;
+}
+.main-container {
+	height: 50vh;
+	width: 50%;
+	// background-color: orange;
+	margin: auto;
+	margin-top: 200px;
+	.head {
+		h1 {
+			color: $white;
+			font-size: 3rem;
+		}
+	}
+	.numbers {
+		input {
+			width: 90%;
+			text-align: right;
+			padding: 25px;
+			font-size: 32px;
+			border-radius: 15px;
+			border: none;
+			background-color: $screenBackground;
+			color: $white;
+			margin-top: 25px;
+		}
+	}
+	.keypadBox {
+		background-color: $keypadBackground;
+		height: 500px;
+		width: 90%;
+		border-radius: 15px;
+		margin-top: 25px;
+	}
+	.numberKeys {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		button {
+			width: 100px;
+			height: 50px;
+			margin: 20px;
+			border: none;
+			border-radius: 10px;
+			background-color: $keyBackground;
+			box-shadow: 1px 5px $keyShadow;
+			font-size: 32px;
+			font-family: 'Spartan', sans-serif;
+		}
+		button:hover {
+			cursor: pointer;
+		}
+		#del {
+			background-color: hsl(221, 33%, 42%);
+			box-shadow: 1px 5px $mainBackground;
+		}
+	}
+	.bottomButtons {
+		display: flex;
+		button {
+			width: 250px;
+			height: 50px;
+			margin: 20px;
+			border: none;
+			border-radius: 10px;
+			font-size: 32px;
+			font-family: 'Spartan', sans-serif;
+		}
+		button:hover {
+			cursor: pointer;
+		}
+		#equals {
+			background-color: $keyToggleRed;
+			box-shadow: 1px 5px $darkRed;
+		}
+		#reset {
+			background-color: hsl(221, 33%, 42%);
+			box-shadow: 1px 5px $mainBackground;
+		}
+	}
+}

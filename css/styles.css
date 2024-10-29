@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  background-color: #3a4764;
+}
+
+.main-container {
+  height: 50vh;
+  width: 50%;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.main-container .head h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.main-container .numbers input {
+  width: 90%;
+  text-align: right;
+  padding: 25px;
+  font-size: 32px;
+  border-radius: 15px;
+  border: none;
+  background-color: #182034;
+  color: white;
+  margin-top: 25px;
+}
+
+.main-container .keypadBox {
+  background-color: #232c43;
+  height: 500px;
+  width: 90%;
+  border-radius: 15px;
+  margin-top: 25px;
+}
+
+.main-container .numberKeys {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+}
+
+.main-container .numberKeys button {
+  width: 100px;
+  height: 50px;
+  margin: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #eae3dc;
+  -webkit-box-shadow: 1px 5px #b4a597;
+          box-shadow: 1px 5px #b4a597;
+  font-size: 32px;
+  font-family: 'Spartan', sans-serif;
+}
+
+.main-container .numberKeys button:hover {
+  cursor: pointer;
+}
+
+.main-container .numberKeys #del {
+  background-color: #485e8e;
+  -webkit-box-shadow: 1px 5px #3a4764;
+          box-shadow: 1px 5px #3a4764;
+}
+
+.main-container .bottomButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-container .bottomButtons button {
+  width: 250px;
+  height: 50px;
+  margin: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 32px;
+  font-family: 'Spartan', sans-serif;
+}
+
+.main-container .bottomButtons button:hover {
+  cursor: pointer;
+}
+
+.main-container .bottomButtons #equals {
+  background-color: #d03f2f;
+  -webkit-box-shadow: 1px 5px #93261a;
+          box-shadow: 1px 5px #93261a;
+}
+
+.main-container .bottomButtons #reset {
+  background-color: #485e8e;
+  -webkit-box-shadow: 1px 5px #3a4764;
+          box-shadow: 1px 5px #3a4764;
+}
+/*# sourceMappingURL=styles.css.map */
