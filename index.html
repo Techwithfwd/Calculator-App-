@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>Calculator</title>
+	</head>
+	<body>
+		<div class="main-container">
+			<div class="head">
+				<h1 id="logo"></h1>
+			</div>
+			<div class="numbers">
+				<div class="inputBox">
+					<input type="number" placeholder="0" id="conversionBox" />
+				</div>
+				<div class="keypadBox">
+					<div class="numberKeys" onclick="calculate()">
+						<button id="7">7</button>
+						<button id="8">8</button>
+						<button id="9">9</button>
+						<button id="del">DEL</button>
+						<button id="4">4</button>
+						<button id="5">5</button>
+						<button id="6">6</button>
+						<button id="add">+</button>
+						<button id="1">1</button>
+						<button id="2">2</button>
+						<button id="3">3</button>
+						<button id="subtract">-</button>
+						<button id="decimal">.</button>
+						<button id="0">0</button>
+						<button id="divide">/</button>
+						<button id="multiply">x</button>
+					</div>
+					<div class="bottomButtons">
+						<button id="reset">Reset</button>
+						<button id="equals">=</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
